@@ -5,8 +5,8 @@ export default function CommitListComponent(props) {
         <>
             { props.commitList.map((commitData, index) => {
                 return (
-                    <div className="row">
-                        <div key={index} className="col-12 commit-details">
+                    <div className="row" key={index}>
+                        <div className="col-12 commit-details">
                             <div className="detail-template">
                                 <img src={commitData.avatar_url} className="committer-url" alt="" />
                                 <div style={{"display": "inline-block", "marginLeft": "30px"}}>
