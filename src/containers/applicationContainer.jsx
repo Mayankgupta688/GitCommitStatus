@@ -1,4 +1,5 @@
 import React from "react";
+import RepositoryDetailsComponent from "../components/repositoryDetails"
 
 export default class ApplicationContainerComponent extends React.Component {
 
@@ -9,6 +10,10 @@ export default class ApplicationContainerComponent extends React.Component {
         }
     }
     render() {
-        return <div>Application Container for Commit Data</div>;
+        return (
+            <div>
+                <RepositoryDetailsComponent></RepositoryDetailsComponent>
+            </div>
+        );
     }
 }
