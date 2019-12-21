@@ -10,16 +10,21 @@ export default function RepositoryDetailsComponent(props) {
         <div class="row">
             { props.repoDetails && (
                 <>
-                <div className="repository-details-container col-4">
-                    <img src={props.repoDetails.organization.avatar_url} alt=""/>
-                    <div>
-                        <strong className="repo-name col-12">{capitalize(props.repoDetails.owner.login) + " / " + capitalize(props.repoDetails.name)}</strong> 
+                    <div className="repository-details-container col-4">
+                        <img src={props.repoDetails.organization.avatar_url} alt=""/>
+                        <div>
+                            <strong className="repo-name col-12">{capitalize(props.repoDetails.owner.login) + " / " + capitalize(props.repoDetails.name)}</strong> 
+                        </div>
                     </div>
-                </div>
 
-                <div className="col-8 repository-other-details">
-                    
-                </div>
+                    <div className="col-8 repository-other-details">
+                        <p><b>Supported Language: </b>{props.repoDetails.language}</p>
+                        <p><b>Total Open Issues: </b>{props.repoDetails.open_issues_count}</p>
+                        <p><b>Default Branch: </b>{capitalize(props.repoDetails.default_branch)}</p>
+                        <p><b>Subscriber Count: </b>{props.repoDetails.subscribers_count}</p>
+                        <p><b>Application Size: </b>{props.repoDetails.size}</p>
+                        <p><b>Application Url: </b>{props.repoDetails.homepage}</p>                    
+                    </div>
                 </>
             )}
         </div>
