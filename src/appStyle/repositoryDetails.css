@@ -1,0 +1,15 @@
+.repository-details {
+    margin-top: 30px;
+}
+
+.repo-name {
+    color: blue;
+    font-size: 25px;
+    padding-left: 0;
+}
+
+.commit-details {
+    margin-top: 10px;
+    border: 1px solid #e4e0e0;
+    padding: 10px;
+}
