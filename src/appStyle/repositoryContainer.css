@@ -8,6 +8,13 @@
     padding-left: 0;
 }
 
+.repository-details-container {
+    border: 1px solid #e4e0e0;
+    padding: 15px;
+    text-align: center;
+
+}
+
 .commit-details {
     margin-top: 10px;
     border: 1px solid #e4e0e0;
@@ -33,4 +40,10 @@
     display: inline-block;
     margin-left: 30px;
     align-self: center;
+}
+
+.repository-other-details {
+    border: 1px solid #e4e0e0;
+    padding: 15px;
+    border-left: none;
 }

@@ -7,10 +7,21 @@ var capitalize = (s) => {
 
 export default function RepositoryDetailsComponent(props) {
     return (
-        <>
+        <div class="row">
             { props.repoDetails && (
-                <strong className="repo-name col-12">{capitalize(props.repoDetails.owner.login) + " / " + capitalize(props.repoDetails.name)}</strong> 
+                <>
+                <div className="repository-details-container col-4">
+                    <img src={props.repoDetails.organization.avatar_url} alt=""/>
+                    <div>
+                        <strong className="repo-name col-12">{capitalize(props.repoDetails.owner.login) + " / " + capitalize(props.repoDetails.name)}</strong> 
+                    </div>
+                </div>
+
+                <div className="col-8 repository-other-details">
+                    
+                </div>
+                </>
             )}
-        </>
+        </div>
     )
 }
