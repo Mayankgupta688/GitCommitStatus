@@ -1,4 +1,4 @@
-var commitData = [
+var sampleCommitData = [
     {
       "sha": "9b9116c79d626b6356f3dfe0d48c9d990ac412a2",
       "node_id": "MDY6Q29tbWl0MjQxOTUzMzk6OWI5MTE2Yzc5ZDYyNmI2MzU2ZjNkZmUwZDQ4YzlkOTkwYWM0MTJhMg==",
@@ -2371,4 +2371,4 @@ var commitData = [
     }
   ]
 
-  export default commitData;
+  export default sampleCommitData;
