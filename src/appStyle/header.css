@@ -1,0 +1,22 @@
+.header-component {
+    height: 80px;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    background-color: black;
+}
+
+.header-component .github-logo {
+    height: 40px;
+    width: 40px;
+    flex-direction: column;
+    align-self: center;
+    margin-right: 15px;
+    margin-left: 20px;
+}
+
+.header-component .github-project-name {
+    flex-direction: column;
+    align-self: center;
+    color: white
+}

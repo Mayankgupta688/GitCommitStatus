@@ -1,5 +1,7 @@
 import React from "react";
 import RepositoryDetailsComponent from "../components/repositoryDetails"
+import HeaderComponent from "../components/header"
+import { getRepositoryDetails } from "../services/repoData";
 
 export default class ApplicationContainerComponent extends React.Component {
 
@@ -9,10 +11,20 @@ export default class ApplicationContainerComponent extends React.Component {
             commitData : null
         }
     }
+
+    componentDidMount() {
+        getRepositoryDetails().then((repoDetails) => {
+            this.setState({
+                repoDetails: repoDetails
+            })
+        });
+    }
+
     render() {
         return (
             <div>
-                <RepositoryDetailsComponent></RepositoryDetailsComponent>
+                <HeaderComponent repoDetails={this.state.repoDetails}></HeaderComponent>
+                <RepositoryDetailsComponent repoDetails={this.state.repoDetails}></RepositoryDetailsComponent>
             </div>
         );
     }
