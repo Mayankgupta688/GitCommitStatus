@@ -28,7 +28,9 @@ export default class ApplicationContainerComponent extends React.Component {
 
             commitList.forEach(commitData => {
                 renderArray.push({
-                    author: commitData.commit.author.name
+                    author: commitData.commit.author.name,
+                    avatar_url: commitData.author.avatar_url,
+                    message: commitData.commit.message
                 })
             });
             that.setState({

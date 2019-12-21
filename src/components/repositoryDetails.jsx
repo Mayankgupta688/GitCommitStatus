@@ -17,7 +17,6 @@ export default class RepositoryDetailsComponent extends React.Component {
     }
 
     render() {
-        debugger;
         return (
             <div className="container repository-details">
                 { 
@@ -28,8 +27,19 @@ export default class RepositoryDetailsComponent extends React.Component {
 
                 
 
-                {this.props.commitList.map(commitData => {
-                    return <div className="col-12 commit-details"><b>Committed By: {commitData.author}</b><br/></div>
+                {this.props.commitList.map((commitData, index) => {
+                    return (
+                        <div key={index} className="col-12 commit-details">
+                            <div className="detail-template">
+                                <img src={commitData.avatar_url} className="committer-url" alt={commitData.author} />
+                                <div style={{"display": "inline-block", "marginLeft": "30px"}}>
+                                    <b style={{"display": "block"}}>Committed By: {commitData.author}</b>
+                                    <b style={{"display": "block"}}>Committed By: {commitData.author}</b>
+                                </div>
+                            </div><br></br>
+                            <div><b>Commit Message: </b>{commitData.message}</div>
+                        </div>
+                    )
                 })}
 
 
