@@ -19,14 +19,14 @@ export default class ApplicationContainerComponent extends React.Component {
         var that = this;
         getRepositoryDetails().then((repoDetails) => {
             that.setState({
-                repoDetails: repoDetails
+                repoDetails: repoDetails.data
             })
         });
 
         getRepositoryCommitDetails().then((commitList) => {
             let renderArray = [];
 
-            commitList.forEach(commitData => {
+            commitList.data.forEach(commitData => {
                 renderArray.push({
                     author: commitData.commit.author.name,
                     avatar_url: commitData.author.avatar_url,
