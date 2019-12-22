@@ -1,6 +1,6 @@
 import React from "react";
 import RepositoryDetailsComponent from "../components/repositoryDetails";
-import CommitListComponent from "./commitList"
+import CommitListComponent from "../components/commitList"
 
 export default class RepositoryContainerComponent extends React.Component {
 
