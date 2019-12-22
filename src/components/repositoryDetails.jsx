@@ -1,4 +1,5 @@
 import React from "react"
+import "../appStyle/repositoryDetails.css";
 
 var capitalize = (s) => {
     if (typeof s !== 'string') return ''

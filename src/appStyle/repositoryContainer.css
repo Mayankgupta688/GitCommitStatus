@@ -2,48 +2,7 @@
     margin-top: 30px;
 }
 
-.repo-name {
-    color: blue;
-    font-size: 25px;
-    padding-left: 0;
-}
-
-.repository-details-container {
-    border: 1px solid #e4e0e0;
-    padding: 15px;
-    text-align: center;
-
-}
-
-.commit-details {
-    margin-top: 10px;
-    border: 1px solid #e4e0e0;
-    padding: 10px;
-}
-
 .committer-url{
     height: 40px;
     width: 40px;
-}
-
-.detail-template {
-    display: flex;
-}
-
-.detail-template img{
-    height: 40px;
-    width: 40px;
-    align-self: center;
-}
-
-.detail-template div{
-    display: inline-block;
-    margin-left: 30px;
-    align-self: center;
-}
-
-.repository-other-details {
-    border: 1px solid #e4e0e0;
-    padding: 15px;
-    border-left: none;
 }

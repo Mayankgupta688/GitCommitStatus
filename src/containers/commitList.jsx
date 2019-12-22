@@ -1,4 +1,5 @@
 import React from "react";
+import "../appStyle/commitList.css"
 
 export default function CommitListComponent(props) {
     return (
