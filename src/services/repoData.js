@@ -1,5 +1,3 @@
-import sampleRepoData from "../data/sampleRepoData";
-import sampleCommitData from "../data/sampleCommitData";
 import axios from "axios";
 
 export function getRepositoryDetails() {

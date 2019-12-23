@@ -16,9 +16,8 @@ export default class ApplicationContainerComponent extends React.Component {
     }
 
     componentDidMount() {
-        var that = this;
         getRepositoryDetails().then((repoDetails) => {
-            that.setState({
+            this.setState({
                 repoDetails: repoDetails.data
             })
         });
@@ -34,7 +33,7 @@ export default class ApplicationContainerComponent extends React.Component {
                     email: commitData.commit.author.email
                 })
             });
-            that.setState({
+            this.setState({
                 commitList: renderArray
             })
         });

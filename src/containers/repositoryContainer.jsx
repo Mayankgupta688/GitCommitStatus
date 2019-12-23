@@ -3,16 +3,6 @@ import RepositoryDetailsComponent from "../components/repositoryDetails";
 import CommitListComponent from "../components/commitList"
 
 export default class RepositoryContainerComponent extends React.Component {
-
-    renderData() {
-        var renderArray = [];
-        for(let key in this.props.commitList) {
-            renderArray.push(<h1>{this.props.commitList[key].commit.author}</h1>)
-        }
-
-        return renderArray;
-    }
-
     render() {
         return (
             <div className="container repository-details">
